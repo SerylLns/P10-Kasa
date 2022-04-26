@@ -1,0 +1,25 @@
+*, html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 40px 100px;
+  padding: 0px;
+}
+
+ul,li {
+  list-style: none;
+}
+
+// COLORS
+$principal: #FF6060;
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px;
+  }
+}

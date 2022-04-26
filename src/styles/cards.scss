@@ -1,0 +1,47 @@
+.flats-container{
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+
+.card{
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background: none;
+  &:hover{
+    cursor: pointer;
+    div{
+      opacity: 0.3;
+    }
+  }
+  div {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.1;
+    border-radius: 10px;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    mix-blend-mode: darken;
+  }
+  p{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+}

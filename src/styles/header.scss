@@ -1,0 +1,39 @@
+$principal: #FF6060;
+
+header{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+
+  nav ul {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    color: $principal;
+    font-weight: 500;
+    li{
+      cursor: pointer;
+    }
+  }
+}
+
+.nav-active{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  header{
+    height: 45px;
+    img {
+      width: 35%;
+    }
+    nav ul {
+      font-size: 12px;
+      width: 140px;
+    }
+  }
+}
