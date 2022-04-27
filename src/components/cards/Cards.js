@@ -12,7 +12,7 @@ export default function Cards() {
   return (
     <div className="flats-container">
       {flats.map(flat => (
-        <NavLink to={`/${flat.id}`} key={flat.id}>
+        <NavLink to={`/flats/${flat.id}`} key={flat.id}>
           <Card flat={flat}/>
         </NavLink>
       ))}

@@ -7,9 +7,12 @@
 }
 
 body {
+  position: relative;
   margin: 40px 100px;
   padding: 0px;
   overflow-x: hidden;
+  padding-bottom: 220px;
+  min-height: 100vh;
 }
 a{
   color: inherit;
@@ -26,5 +29,6 @@ $principal: #FF6060;
 @media screen and (max-width: 600px) {
   body {
     margin: 20px;
+    padding-bottom: 220px;
   }
 }

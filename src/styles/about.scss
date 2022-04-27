@@ -37,7 +37,6 @@
 
 @media screen and (max-width: 600px) {
   .about-page {
-
     .section1 {
       margin: 20px 0px;
 
@@ -48,6 +47,9 @@
         width: 62%;
         left: 30%;
       }
+    }
+    .section2 {
+      width: 100%;
     }
   }
 }

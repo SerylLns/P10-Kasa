@@ -1,5 +1,7 @@
 
 footer{
+  position: absolute;
+  bottom: 0;
   display: block;
   margin: 40px -100px -40px -100px;
   background-color: #000;
@@ -20,6 +22,9 @@ footer{
 }
 @media screen and (max-width: 600px) {
   footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin: 40px -20px -20px -20px;
   }
 }

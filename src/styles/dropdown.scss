@@ -35,3 +35,23 @@
     padding: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  .dropdown {
+    margin: 10px 0px;
+    .dropdown-header{
+      padding: 5px;
+      p{
+        font-size: 13px;
+      }
+      img{
+        width: 9px;
+        margin-right: 5px;
+      }
+    }
+    .dropdown-content{
+      font-size: 13px;
+    }
+  }
+}
