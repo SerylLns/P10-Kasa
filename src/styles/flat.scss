@@ -1,4 +1,25 @@
-.flat-page{}
+.flat-page{
+  .flat-attr{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tags{
+      display: flex;
+    }
+  }
+  .flat-desc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .dropdown{
+      width: 45%;
+    }
+    ul, li{
+      background: none;
+    }
+  }
+}
 
 .flat-header{
   color: #FF6060;
