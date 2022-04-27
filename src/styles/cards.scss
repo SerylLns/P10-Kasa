@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 50px;
+  a {
+    border-radius: 10px;
+  }
 }
 
 .card{
