@@ -4,14 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .tags{
-      display: flex;
-    }
+  }
+  .tags{
+    display: flex;
+    margin-top: 20px;
   }
   .flat-desc{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
     .dropdown{
       width: 45%;
     }
@@ -19,14 +21,20 @@
       background: none;
     }
   }
+  .rating{
+    margin-top: 25px;
+  }
 }
-
-.flat-header{
+.flat-infos{
+  display: flex;
   color: #FF6060;
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .flat-info-left{
+    width: 70%;
+  }
   h3{
     font-size: 36px;
     font-weight: 500;
@@ -52,6 +60,43 @@
       border-radius: 50%;
       object-fit: cover;
       object-position: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flat-infos{
+    flex-direction: column;
+    .flat-info-left{
+      width: 100%;
+    }
+    h3{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .flat-info-right{
+      display: flex;
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+      .rating{
+        margin-top: 0px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    .flat-host{
+      img{
+        width: 32px;
+      }
+      p{
+        font-size: 12px;
+      }
     }
   }
 }
