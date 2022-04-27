@@ -8,11 +8,10 @@
 
 body {
   position: relative;
-  margin: 40px 100px;
   padding: 0px;
   overflow-x: hidden;
-  padding-bottom: 220px;
-  min-height: 100vh;
+  // padding-bottom: 220px;
+  // min-height: 100vh;
 }
 a{
   color: inherit;
@@ -31,4 +30,10 @@ $principal: #FF6060;
     margin: 20px;
     padding-bottom: 220px;
   }
+  .app {
+    margin: 0px !important;
+  }
+}
+.app{
+  margin: 40px 100px;
 }
