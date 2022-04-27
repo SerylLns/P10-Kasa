@@ -99,4 +99,10 @@
       }
     }
   }
+  .flat-desc{
+    flex-direction: column;
+    .dropdown{
+      width: 100% !important;
+    }
+  }
 }
