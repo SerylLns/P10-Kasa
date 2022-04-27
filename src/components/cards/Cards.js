@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom';
 import logements from '../../data/logements.json'
 import Card from './Card';
 export default function Cards() {
@@ -11,7 +12,9 @@ export default function Cards() {
   return (
     <div className="flats-container">
       {flats.map(flat => (
-        <Card flat={flat} key={flat.id}/>
+        <NavLink to={`/${flat.id}`} key={flat.id}>
+          <Card flat={flat}/>
+        </NavLink>
       ))}
     </div>
   )
