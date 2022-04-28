@@ -1,7 +1,7 @@
 .dropdown{
   position: relative;
   margin: 20px 0px;
-  background-color: #F6F6F6;
+  background-color: #FFF;
   border-radius: 5px;
   .dropdown-header{
     position: relative;
@@ -28,13 +28,14 @@
     position: relative;
     z-index: 5;
     margin-top: -5px;
-    background-color: #E5E5E5;
+    background-color: #F6F6F6;
     color: #FF6060;
     font-size: 20px;
     font-weight: 400;
     border-radius: 5px;
     width: 100%;
     padding: 20px;
+    animation: open 0.5s;
   }
 }
 
@@ -55,5 +56,15 @@
     .dropdown-content{
       font-size: 13px;
     }
+  }
+}
+
+@keyframes open {
+  0% {
+    height: 0px;
+  }
+  100% {
+    margin-top: -5px;
+    height: 100%;
   }
 }

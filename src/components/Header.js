@@ -7,7 +7,9 @@ import "../styles/header.scss"
 export default function Header() {
   return (
     <header>
-      <img src={Logo} alt="logo"  />
+      <NavLink to="/">
+        <img src={Logo} alt="logo"  />
+      </NavLink>
       <nav>
         <ul>
           <NavLink to="/" className={({isActive}) => isActive ? "nav-active" : ""}>
