@@ -4,8 +4,7 @@
   background-color: #F6F6F6;
   border-radius: 5px;
   .dropdown-header{
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: #FF6060 ;
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,9 @@
     }
   }
   .dropdown-content{
-
+    position: relative;
+    z-index: 5;
+    margin-top: -5px;
     background-color: #E5E5E5;
     color: #FF6060;
     font-size: 20px;

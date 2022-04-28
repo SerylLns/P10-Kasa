@@ -33,7 +33,7 @@ export default function Carousel({images}) {
                 )
                 ))}
             </div>
-            <span>{current}/{images.length -1}</span>
+            <span>{current + 1}/{images.length}</span>
           </>
         )}
         <img src={ArrowRight} alt="suivant" className='arrow-left' onClick={() => next()} />
