@@ -3,7 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px 50px;
   row-gap: 50px;
+  column-gap: 20px;
   a {
     border-radius: 10px;
   }

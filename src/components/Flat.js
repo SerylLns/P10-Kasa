@@ -16,7 +16,7 @@ export default function Flat() {
   useEffect(() => {
     let current = logements.filter(flat => flat.id === id)
     setFlat(current[0])
-  }, [flat])
+  }, [flat, id])
 
   return (
     <>

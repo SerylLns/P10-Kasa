@@ -36,8 +36,12 @@ export default function Carousel({images}) {
             <span>{current + 1}/{images.length}</span>
           </>
         )}
-        <img src={ArrowRight} alt="suivant" className='arrow-left' onClick={() => next()} />
-        <img src={ArrowRight} alt="précedent" className='arrow-right' onClick={() => previous()}/>
+        {images.length > 1 && (
+          <>
+            <img src={ArrowRight} alt="suivant" className='arrow-left' onClick={() => next()} />
+            <img src={ArrowRight} alt="précedent" className='arrow-right' onClick={() => previous()}/>
+          </>
+        )}
       </div>
     </>
   )
